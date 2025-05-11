@@ -285,20 +285,15 @@ with tab3:
     # How it works tab content
     st.markdown("<div class='section-header'>How This Application Works</div>", unsafe_allow_html=True)
     
-    st.markdown("""
-    <div class='container'>
-        <p>This application is powered by a GAN model trained on the Chest X-ray Pneumonia dataset. Here's how it works:</p>
-        
-        <ol>
-            <li><strong>Model Architecture:</strong> The application uses a DCGAN (Deep Convolutional GAN) architecture optimized for generating medical images.</li>
-            <li><strong>Latent Space:</strong> When you generate images, the app creates random vectors in a 100-dimensional "latent space" and passes them through the generator network.</li>
-            <li><strong>Image Generation:</strong> The generator transforms these latent vectors into synthetic X-ray images with the same dimensions and characteristics as the training data.</li>
-            <li><strong>Post-Processing:</strong> Options like grayscale conversion and contrast enhancement can be applied to make the generated images more similar to real medical X-rays.</li>
-        </ol>
-        
-        <p>The "Latent Space Exploration" feature allows you to manually adjust specific dimensions in the latent space to see how they affect the generated images. This can help identify which latent dimensions correspond to specific features in the X-ray images.</p>
-    </div>
-    """, unsafe_allow_html=True)
+    st.markdown("This application is powered by a GAN model trained on the Chest X-ray Pneumonia dataset. Here's how it works:")
+
+    st.markdown("**Model Architecture:** The application uses a DCGAN (Deep Convolutional GAN) architecture optimized for generating medical images.")
+    st.markdown("**Latent Space:** When you generate images, the app creates random vectors in a 100-dimensional \"latent space\" and passes them through the generator network.")
+    st.markdown("**Image Generation:** The generator transforms these latent vectors into synthetic X-ray images with the same dimensions and characteristics as the training data.")
+    st.markdown("**Post-Processing:** Options like grayscale conversion and contrast enhancement can be applied to make the generated images more similar to real medical X-rays.")
+
+    st.markdown("The \"Latent Space Exploration\" feature allows you to manually adjust specific dimensions in the latent space to see how they affect the generated images. This can help identify which latent dimensions correspond to specific features in the X-ray images.")
+
     
     st.markdown("<div class='section-header'>Code Structure</div>", unsafe_allow_html=True)
     
