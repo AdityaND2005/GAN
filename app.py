@@ -245,26 +245,25 @@ with tab2:
     st.markdown("<div class='section-header'>About Generative Adversarial Networks (GANs)</div>", unsafe_allow_html=True)
     
     st.markdown("""
-    <div class='container'>
-        <p>Generative Adversarial Networks (GANs) are a class of machine learning frameworks designed by Ian Goodfellow and his colleagues in 2014. A GAN consists of two neural networks competing against each other in a zero-sum game:</p>
-        
-        <ul>
-            <li><strong>Generator Network:</strong> Creates synthetic data samples attempting to mimic the distribution of real data.</li>
-            <li><strong>Discriminator Network:</strong> Acts as a classifier, distinguishing between real and generated samples.</li>
-        </ul>
-        
-        <p>Through this adversarial process, the generator improves at creating increasingly realistic data, while the discriminator gets better at identifying synthetic data. The ultimate goal is to have a generator that produces samples indistinguishable from real data.</p>
-        
-        <p>In medical imaging, GANs have several important applications:</p>
-        <ul>
-            <li>Data augmentation for improved training of diagnostic models</li>
-            <li>Creating synthetic medical images for research purposes</li>
-            <li>Anonymizing patient data while preserving clinical relevance</li>
-            <li>Image-to-image translation (e.g., MRI to CT conversion)</li>
-            <li>Anomaly detection for identifying unusual patterns in medical scans</li>
-        </ul>
-    </div>
-    """, unsafe_allow_html=True)
+    ### Generative Adversarial Networks (GANs)
+    
+    Generative Adversarial Networks (GANs) are a class of machine learning frameworks designed by Ian Goodfellow and his colleagues in 2014. A GAN consists of two neural networks competing against each other in a zero-sum game:
+    
+    * **Generator Network:** Creates synthetic data samples attempting to mimic the distribution of real data.
+    * **Discriminator Network:** Acts as a classifier, distinguishing between real and generated samples.
+    
+    Through this adversarial process, the generator improves at creating increasingly realistic data, while the discriminator gets better at identifying synthetic data. The ultimate goal is to have a generator that produces samples indistinguishable from real data.
+    
+    ### Applications in Medical Imaging
+    
+    In medical imaging, GANs have several important applications:
+    
+    * Data augmentation for improved training of diagnostic models
+    * Creating synthetic medical images for research purposes
+    * Anonymizing patient data while preserving clinical relevance
+    * Image-to-image translation (e.g., MRI to CT conversion)
+    * Anomaly detection for identifying unusual patterns in medical scans
+    """)
     
     col1, col2 = st.columns(2)
     
