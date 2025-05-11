@@ -269,7 +269,7 @@ with tab2:
     
     with col1:
         st.markdown("<div class='section-header'>GAN Architecture</div>", unsafe_allow_html=True)
-        st.image("https://machinelearningmastery.com/wp-content/uploads/2019/04/Example-of-the-Generative-Adversarial-Network-Model-Architecture.png", 
+        st.image("gan.png", 
                  caption="GAN Architecture Diagram")
     
     with col2:
